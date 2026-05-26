@@ -25,14 +25,14 @@ _sym_db = _symbol_database.Default()
 from google.protobuf import descriptor_pb2 as google_dot_protobuf_dot_descriptor__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1cgibson/auth/v1/options.proto\x12\x0egibson.auth.v1\x1a google/protobuf/descriptor.proto\"\x8f\x01\n\x0b\x41uthOptions\x12\x10\n\x08relation\x18\x01 \x01(\t\x12\x13\n\x0bobject_type\x18\x02 \x01(\t\x12\x16\n\x0eobject_deriver\x18\x03 \x01(\t\x12\x1a\n\x12\x61llowed_identities\x18\x04 \x01(\x05\x12\x17\n\x0funauthenticated\x18\x05 \x01(\x08\x12\x0c\n\x04self\x18\x06 \x01(\x08*\xa8\x01\n\rIdentityClass\x12\x1e\n\x1aIDENTITY_CLASS_UNSPECIFIED\x10\x00\x12\x17\n\x13IDENTITY_CLASS_USER\x10\x01\x12\x1a\n\x16IDENTITY_CLASS_SERVICE\x10\x02\x12\x1c\n\x18IDENTITY_CLASS_COMPONENT\x10\x04\x12$\n IDENTITY_CLASS_PLATFORM_OPERATOR\x10\x08:L\n\x05\x61uthz\x12\x1e.google.protobuf.MethodOptions\x18\xd1\x86\x03 \x01(\x0b\x32\x1b.gibson.auth.v1.AuthOptionsB:Z8github.com/zero-day-ai/sdk/api/gen/gibson/auth/v1;authv1b\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x1cgibson/auth/v1/options.proto\x12\x0egibson.auth.v1\x1a google/protobuf/descriptor.proto\"\x8f\x01\n\x0b\x41uthOptions\x12\x10\n\x08relation\x18\x01 \x01(\t\x12\x13\n\x0bobject_type\x18\x02 \x01(\t\x12\x16\n\x0eobject_deriver\x18\x03 \x01(\t\x12\x1a\n\x12\x61llowed_identities\x18\x04 \x01(\x05\x12\x17\n\x0funauthenticated\x18\x05 \x01(\x08\x12\x0c\n\x04self\x18\x06 \x01(\x08*\xa8\x01\n\rIdentityClass\x12\x1e\n\x1aIDENTITY_CLASS_UNSPECIFIED\x10\x00\x12\x17\n\x13IDENTITY_CLASS_USER\x10\x01\x12\x1a\n\x16IDENTITY_CLASS_SERVICE\x10\x02\x12\x1c\n\x18IDENTITY_CLASS_COMPONENT\x10\x04\x12$\n IDENTITY_CLASS_PLATFORM_OPERATOR\x10\x08:L\n\x05\x61uthz\x12\x1e.google.protobuf.MethodOptions\x18\xd1\x86\x03 \x01(\x0b\x32\x1b.gibson.auth.v1.AuthOptionsB:Z8github.com/zeroroot-ai/sdk/api/gen/gibson/auth/v1;authv1b\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'gibson.auth.v1.options_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'Z8github.com/zero-day-ai/sdk/api/gen/gibson/auth/v1;authv1'
+  _globals['DESCRIPTOR']._serialized_options = b'Z8github.com/zeroroot-ai/sdk/api/gen/gibson/auth/v1;authv1'
   _globals['_IDENTITYCLASS']._serialized_start=229
   _globals['_IDENTITYCLASS']._serialized_end=397
   _globals['_AUTHOPTIONS']._serialized_start=83
