@@ -72,9 +72,7 @@ class ToolServicer(tool_pb2_grpc.ToolServiceServicer):
                 )
             )
 
-        return tool_pb2.ExecuteResponse(
-            output_json=result.model_dump_json()
-        )
+        return tool_pb2.ExecuteResponse(output_json=result.model_dump_json())
 
     def Health(
         self,
@@ -82,9 +80,7 @@ class ToolServicer(tool_pb2_grpc.ToolServiceServicer):
         context: grpc.ServicerContext,
     ) -> tool_pb2.HealthResponse:
         status = self._tool.health()
-        return tool_pb2.HealthResponse(
-            status=gibson_common_pb2.HealthStatus(status=status)
-        )
+        return tool_pb2.HealthResponse(status=gibson_common_pb2.HealthStatus(status=status))
 
     def StreamExecute(
         self,

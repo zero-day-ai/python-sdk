@@ -75,7 +75,9 @@ class Result:
             }
             result.error.CopyFrom(
                 types_pb2.ResultError(
-                    code=code_map.get(self.error_code or "INTERNAL", gibson_common_pb2.ERROR_CODE_INTERNAL),
+                    code=code_map.get(
+                        self.error_code or "INTERNAL", gibson_common_pb2.ERROR_CODE_INTERNAL
+                    ),
                     message=self.error,
                 )
             )

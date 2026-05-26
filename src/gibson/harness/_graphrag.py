@@ -68,7 +68,9 @@ class GraphRAGNamespace:
         resp = self._stub.StoreGraphNode(req)
         return resp.node_id
 
-    async def query_async(self, text: str, top_k: int = 10, scope: str = "mission") -> list[GraphRAGResult]:
+    async def query_async(
+        self, text: str, top_k: int = 10, scope: str = "mission"
+    ) -> list[GraphRAGResult]:
         """Async GraphRAG query."""
         scope_map = {
             "mission_run": types_pb2.QUERY_SCOPE_MISSION_RUN,

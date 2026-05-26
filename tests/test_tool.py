@@ -190,9 +190,7 @@ def test_get_descriptor_output_schema_valid_json(scanner_channel):
 
 
 def test_execute_valid_input_returns_output(scanner_channel):
-    req = tool_pb2.ExecuteRequest(
-        input_json=json.dumps({"url": "http://example.com", "depth": 2})
-    )
+    req = tool_pb2.ExecuteRequest(input_json=json.dumps({"url": "http://example.com", "depth": 2}))
     resp = stub(scanner_channel).Execute(req)
     assert resp.output_json
     output = json.loads(resp.output_json)

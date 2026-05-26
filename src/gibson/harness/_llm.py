@@ -33,7 +33,9 @@ def _to_proto_messages(
     result = []
     for msg in messages:
         if isinstance(msg, dict):
-            result.append(harness_callback_pb2.LLMMessage(role=msg["role"], content=msg.get("content", "")))
+            result.append(
+                harness_callback_pb2.LLMMessage(role=msg["role"], content=msg.get("content", ""))
+            )
         else:
             result.append(harness_callback_pb2.LLMMessage(role=msg.role, content=msg.content))
     return result
@@ -41,8 +43,7 @@ def _to_proto_messages(
 
 def _parse_response(resp: harness_callback_pb2.LLMCompleteResponse) -> LLMResponse:
     tool_calls = [
-        {"id": tc.id, "name": tc.name, "arguments": tc.arguments}
-        for tc in resp.tool_calls
+        {"id": tc.id, "name": tc.name, "arguments": tc.arguments} for tc in resp.tool_calls
     ]
     return LLMResponse(
         content=resp.content,

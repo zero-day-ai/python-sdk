@@ -100,6 +100,4 @@ class AgentServicer(agent_pb2_grpc.AgentServiceServicer):
         context: grpc.ServicerContext,
     ) -> agent_pb2.HealthResponse:
         status = self._agent.health()
-        return agent_pb2.HealthResponse(
-            status=gibson_common_pb2.HealthStatus(status=status)
-        )
+        return agent_pb2.HealthResponse(status=gibson_common_pb2.HealthStatus(status=status))

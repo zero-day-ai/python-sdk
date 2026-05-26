@@ -39,7 +39,9 @@ def harness_with_stub():
 
 def test_gibson_tool_name(harness_with_stub):
     harness, _ = harness_with_stub
-    tool = GibsonTool(name="scanner", description="Scans URLs", harness=harness, tool_name="scanner")
+    tool = GibsonTool(
+        name="scanner", description="Scans URLs", harness=harness, tool_name="scanner"
+    )
     assert tool.name == "scanner"
 
 
@@ -56,6 +58,7 @@ def test_gibson_tool_run_returns_json(harness_with_stub):
     tool = GibsonTool(name="scanner", description="Scans", harness=harness, tool_name="scanner")
     result = tool._run(url="http://example.com")
     import json
+
     parsed = json.loads(result)
     assert parsed["output"] == "tool result"
 
@@ -140,7 +143,6 @@ def test_gibson_llm_system_message_role(harness_with_stub):
 
 def test_callback_handler_counts_llm_calls(harness_with_stub):
     from uuid import uuid4
-
 
     harness, servicer = harness_with_stub
     handler = GibsonCallbackHandler(harness)

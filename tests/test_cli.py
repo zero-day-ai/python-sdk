@@ -31,6 +31,7 @@ def test_load_object_missing_attr():
 
 def test_load_object_valid():
     from gibson.tool._base import BaseTool
+
     obj = load_object("gibson.tool._base:BaseTool")
     assert obj is BaseTool
 
@@ -151,9 +152,7 @@ def test_healthcheck_tool(tmp_path):
     server.start()
 
     runner = CliRunner()
-    result = runner.invoke(
-        main, ["healthcheck", f"127.0.0.1:{port}", "--type", "tool"]
-    )
+    result = runner.invoke(main, ["healthcheck", f"127.0.0.1:{port}", "--type", "tool"])
     assert result.exit_code == 0
     assert "healthy" in result.output
     server.stop(grace=1.0)
@@ -184,9 +183,7 @@ def test_healthcheck_agent():
     server.start()
 
     runner = CliRunner()
-    result = runner.invoke(
-        main, ["healthcheck", f"127.0.0.1:{port}", "--type", "agent"]
-    )
+    result = runner.invoke(main, ["healthcheck", f"127.0.0.1:{port}", "--type", "agent"])
     assert result.exit_code == 0
     assert "healthy" in result.output
     server.stop(grace=1.0)

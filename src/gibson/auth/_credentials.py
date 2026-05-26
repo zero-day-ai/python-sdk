@@ -37,9 +37,7 @@ def channel_credentials(token: str) -> grpc.ChannelCredentials:
     Attaches the token as ``Authorization: bearer <token>`` on every RPC.
     If GIBSON_CLIENT_CERT and GIBSON_CLIENT_KEY are set, adds mTLS.
     """
-    call_creds = grpc.metadata_call_credentials(
-        _BearerTokenPlugin(token), name="bearer-token"
-    )
+    call_creds = grpc.metadata_call_credentials(_BearerTokenPlugin(token), name="bearer-token")
 
     client_cert_path = os.environ.get("GIBSON_CLIENT_CERT")
     client_key_path = os.environ.get("GIBSON_CLIENT_KEY")

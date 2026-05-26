@@ -8,8 +8,7 @@ try:
     import click
 except ImportError:
     print(  # noqa: T201
-        "The 'click' package is required for the CLI. "
-        "Install it with: pip install gibson-sdk[cli]",
+        "The 'click' package is required for the CLI. Install it with: pip install gibson-sdk[cli]",
         file=sys.stderr,
     )
     sys.exit(1)

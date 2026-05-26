@@ -53,7 +53,6 @@ class PingAgent(BaseAgent):
 def test_serve_tool_health_check():
     """serve_tool starts a gRPC ToolService reachable at the given port."""
 
-
     from gibson.tool._server import ToolServicer
 
     # Start a server directly (avoids blocking serve_tool's signal handling)
@@ -81,6 +80,7 @@ def test_serve_tool_execute_round_trip():
     stub = tool_pb2_grpc.ToolServiceStub(grpc.insecure_channel(f"127.0.0.1:{port}"))
     resp = stub.Execute(tool_pb2.ExecuteRequest(input_json=b'{"msg":"hello"}'))
     import json
+
     result = json.loads(resp.output_json)
     assert result["reply"] == "pong:hello"
     server.stop(grace=1.0)
