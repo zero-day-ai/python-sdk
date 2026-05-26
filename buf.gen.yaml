@@ -1,0 +1,8 @@
+# Regenerate Python stubs from the sibling sdk repo.
+# Run: make proto
+#
+# This file documents the codegen command; actual generation uses
+# grpcio-tools directly via the Makefile (see `make proto`).
+# The generated *_pb2.py / *_pb2_grpc.py / *_pb2.pyi files are
+# committed to the repo — same pattern as Go gen output in the sdk.
+version: v2
