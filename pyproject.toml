@@ -47,7 +47,7 @@ Repository = "https://github.com/zero-day-ai/python-sdk"
 Issues = "https://github.com/zero-day-ai/python-sdk/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/gibson", "src/taxonomy", "src/intelligence"]
+packages = ["src/gibson", "src/buf", "src/taxonomy", "src/intelligence"]
 
 [dependency-groups]
 dev = [
@@ -55,6 +55,7 @@ dev = [
     "pytest-asyncio>=0.24.0",
     "grpcio-tools>=1.80.0",
     "ruff>=0.8.0",
+    "click>=8.4.1",
 ]
 
 [tool.pytest.ini_options]
@@ -67,6 +68,8 @@ target-version = "py311"
 exclude = [
     "src/**/*_pb2*.py",
     "src/**/*_pb2*.pyi",
+    "src/buf/**/*.py",
+    "src/buf/**/*.pyi",
 ]
 
 [tool.ruff.lint]
