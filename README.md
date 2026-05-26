@@ -1,6 +1,6 @@
 # gibson-sdk
 
-Python SDK for authoring agents, tools, and plugins on the [Gibson](https://github.com/zero-day-ai) platform.
+Python SDK for authoring agents, tools, and plugins on the [Gibson](https://github.com/zeroroot-ai) platform.
 
 ## Install
 

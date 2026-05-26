@@ -60,7 +60,7 @@ jobs:
     if: github.event_name == 'pull_request'
     steps:
       - uses: actions/checkout@v4
-      - uses: zero-day-ai/.github/.github/actions/pr-title-lint@main
+      - uses: zeroroot-ai/.github/.github/actions/pr-title-lint@main
         with:
           pr-title: ${{ github.event.pull_request.title }}
 
@@ -69,7 +69,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: zero-day-ai/.github/.github/actions/no-monorepo-shortcuts@main
+      - uses: zeroroot-ai/.github/.github/actions/no-monorepo-shortcuts@main
 
   release-please:
     name: release-please

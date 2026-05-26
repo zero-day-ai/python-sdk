@@ -24,14 +24,14 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+gibson/budget_status/v1/budget_status.proto\x12\x17gibson.budget_status.v1\"\xb0\x01\n\x0e\x42udgetExceeded\x12\x33\n\x05scope\x18\x01 \x01(\x0e\x32$.gibson.budget_status.v1.BudgetScope\x12\x11\n\tdimension\x18\x02 \x01(\t\x12\x15\n\rcurrent_usage\x18\x03 \x01(\x03\x12\r\n\x05limit\x18\x04 \x01(\x03\x12\x1c\n\x14period_reset_at_unix\x18\x05 \x01(\x03\x12\x12\n\nsubject_id\x18\x06 \x01(\t*r\n\x0b\x42udgetScope\x12\x1c\n\x18\x42UDGET_SCOPE_UNSPECIFIED\x10\x00\x12\x15\n\x11\x42UDGET_SCOPE_USER\x10\x01\x12\x15\n\x11\x42UDGET_SCOPE_TEAM\x10\x02\x12\x17\n\x13\x42UDGET_SCOPE_TENANT\x10\x03\x42\x63P\x01ZIgithub.com/zero-day-ai/sdk/api/gen/gibson/budget_status/v1;budgetstatusv1\xaa\x02\x13Gibson.BudgetStatusb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n+gibson/budget_status/v1/budget_status.proto\x12\x17gibson.budget_status.v1\"\xb0\x01\n\x0e\x42udgetExceeded\x12\x33\n\x05scope\x18\x01 \x01(\x0e\x32$.gibson.budget_status.v1.BudgetScope\x12\x11\n\tdimension\x18\x02 \x01(\t\x12\x15\n\rcurrent_usage\x18\x03 \x01(\x03\x12\r\n\x05limit\x18\x04 \x01(\x03\x12\x1c\n\x14period_reset_at_unix\x18\x05 \x01(\x03\x12\x12\n\nsubject_id\x18\x06 \x01(\t*r\n\x0b\x42udgetScope\x12\x1c\n\x18\x42UDGET_SCOPE_UNSPECIFIED\x10\x00\x12\x15\n\x11\x42UDGET_SCOPE_USER\x10\x01\x12\x15\n\x11\x42UDGET_SCOPE_TEAM\x10\x02\x12\x17\n\x13\x42UDGET_SCOPE_TENANT\x10\x03\x42\x63P\x01ZIgithub.com/zeroroot-ai/sdk/api/gen/gibson/budget_status/v1;budgetstatusv1\xaa\x02\x13Gibson.BudgetStatusb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'gibson.budget_status.v1.budget_status_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'P\001ZIgithub.com/zero-day-ai/sdk/api/gen/gibson/budget_status/v1;budgetstatusv1\252\002\023Gibson.BudgetStatus'
+  _globals['DESCRIPTOR']._serialized_options = b'P\001ZIgithub.com/zeroroot-ai/sdk/api/gen/gibson/budget_status/v1;budgetstatusv1\252\002\023Gibson.BudgetStatus'
   _globals['_BUDGETSCOPE']._serialized_start=251
   _globals['_BUDGETSCOPE']._serialized_end=365
   _globals['_BUDGETEXCEEDED']._serialized_start=73

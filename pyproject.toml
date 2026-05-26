@@ -42,9 +42,9 @@ all = [
 gibson = "gibson.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/zero-day-ai/python-sdk"
-Repository = "https://github.com/zero-day-ai/python-sdk"
-Issues = "https://github.com/zero-day-ai/python-sdk/issues"
+Homepage = "https://github.com/zeroroot-ai/python-sdk"
+Repository = "https://github.com/zeroroot-ai/python-sdk"
+Issues = "https://github.com/zeroroot-ai/python-sdk/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/gibson", "src/buf", "src/taxonomy", "src/intelligence"]

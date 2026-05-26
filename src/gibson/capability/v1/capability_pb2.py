@@ -24,14 +24,14 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%gibson/capability/v1/capability.proto\x12\x14gibson.capability.v1\"\x98\x02\n\x13\x43\x61pabilityGrantInfo\x12\x0b\n\x03jti\x18\x01 \x01(\t\x12\x1c\n\x14recipient_install_id\x18\x02 \x01(\t\x12=\n\x0frecipient_class\x18\x03 \x01(\x0e\x32$.gibson.capability.v1.RecipientClass\x12\x16\n\x0erecipient_name\x18\x04 \x01(\t\x12\x14\n\x0c\x61llowed_rpcs\x18\x05 \x03(\t\x12\x12\n\nmission_id\x18\x06 \x01(\t\x12\x0f\n\x07task_id\x18\x07 \x01(\t\x12\x16\n\x0eissued_at_unix\x18\x08 \x01(\x03\x12\x17\n\x0f\x65xpires_at_unix\x18\t \x01(\x03\x12\x13\n\x0bnear_expiry\x18\n \x01(\x08*\x82\x01\n\x0eRecipientClass\x12\x1f\n\x1bRECIPIENT_CLASS_UNSPECIFIED\x10\x00\x12\x19\n\x15RECIPIENT_CLASS_AGENT\x10\x01\x12\x18\n\x14RECIPIENT_CLASS_TOOL\x10\x02\x12\x1a\n\x16RECIPIENT_CLASS_PLUGIN\x10\x03\x42\\P\x01ZDgithub.com/zero-day-ai/sdk/api/gen/gibson/capability/v1;capabilityv1\xaa\x02\x11Gibson.Capabilityb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n%gibson/capability/v1/capability.proto\x12\x14gibson.capability.v1\"\x98\x02\n\x13\x43\x61pabilityGrantInfo\x12\x0b\n\x03jti\x18\x01 \x01(\t\x12\x1c\n\x14recipient_install_id\x18\x02 \x01(\t\x12=\n\x0frecipient_class\x18\x03 \x01(\x0e\x32$.gibson.capability.v1.RecipientClass\x12\x16\n\x0erecipient_name\x18\x04 \x01(\t\x12\x14\n\x0c\x61llowed_rpcs\x18\x05 \x03(\t\x12\x12\n\nmission_id\x18\x06 \x01(\t\x12\x0f\n\x07task_id\x18\x07 \x01(\t\x12\x16\n\x0eissued_at_unix\x18\x08 \x01(\x03\x12\x17\n\x0f\x65xpires_at_unix\x18\t \x01(\x03\x12\x13\n\x0bnear_expiry\x18\n \x01(\x08*\x82\x01\n\x0eRecipientClass\x12\x1f\n\x1bRECIPIENT_CLASS_UNSPECIFIED\x10\x00\x12\x19\n\x15RECIPIENT_CLASS_AGENT\x10\x01\x12\x18\n\x14RECIPIENT_CLASS_TOOL\x10\x02\x12\x1a\n\x16RECIPIENT_CLASS_PLUGIN\x10\x03\x42\\P\x01ZDgithub.com/zeroroot-ai/sdk/api/gen/gibson/capability/v1;capabilityv1\xaa\x02\x11Gibson.Capabilityb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'gibson.capability.v1.capability_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   _globals['DESCRIPTOR']._loaded_options = None
-  _globals['DESCRIPTOR']._serialized_options = b'P\001ZDgithub.com/zero-day-ai/sdk/api/gen/gibson/capability/v1;capabilityv1\252\002\021Gibson.Capability'
+  _globals['DESCRIPTOR']._serialized_options = b'P\001ZDgithub.com/zeroroot-ai/sdk/api/gen/gibson/capability/v1;capabilityv1\252\002\021Gibson.Capability'
   _globals['_RECIPIENTCLASS']._serialized_start=347
   _globals['_RECIPIENTCLASS']._serialized_end=477
   _globals['_CAPABILITYGRANTINFO']._serialized_start=64
